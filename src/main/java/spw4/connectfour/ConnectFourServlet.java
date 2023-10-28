@@ -1,16 +1,16 @@
-package spw4.connectfour.connectfourwebapp;
+package spw4.connectfour;
 
 import java.io.*;
 
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
-public class HelloServlet extends HttpServlet {
+@WebServlet(name = "ConnectFourServlet", value = "/Connect-Four")
+public class ConnectFourServlet extends HttpServlet {
     private String message;
 
     public void init() {
-        message = "Hello World!";
+        message = "Connect Four";
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
