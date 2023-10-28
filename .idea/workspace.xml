@@ -9,9 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="drop">
+    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="drop finished">
+      <change afterPath="$PROJECT_DIR$/src/test/java/spw4/connectfour/BoardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/spw4/connectfour/ConnectFourTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +33,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
@@ -39,9 +46,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2XN5UwcRfgcMnGb2vlauqJUICZ4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,24 +57,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "java.suggest.annotation.dependency": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.27126437",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;java.suggest.annotation.dependency&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.27126437&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dashn_7v81cvp\Documents\ConnectFourWebApp" />
@@ -80,6 +87,112 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="BoardTest.checkDropOneTokenInvalidColumnLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConnectFourWebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spw4.connectfour.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="spw4.connectfour" />
+      <option name="MAIN_CLASS_NAME" value="spw4.connectfour.BoardTest" />
+      <option name="METHOD_NAME" value="checkDropOneTokenInvalidColumnLeft" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardTest.checkDropTokenWhemColFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConnectFourWebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spw4.connectfour.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="spw4.connectfour" />
+      <option name="MAIN_CLASS_NAME" value="spw4.connectfour.BoardTest" />
+      <option name="METHOD_NAME" value="checkDropTokenWhemColFull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectFourTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConnectFourWebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spw4.connectfour.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="spw4.connectfour" />
+      <option name="MAIN_CLASS_NAME" value="spw4.connectfour.ConnectFourTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectFourTest.checkInitialize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConnectFourWebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spw4.connectfour.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="spw4.connectfour" />
+      <option name="MAIN_CLASS_NAME" value="spw4.connectfour.ConnectFourTest" />
+      <option name="METHOD_NAME" value="checkInitialize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectFourTest.testToStringEmptyBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConnectFourWebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spw4.connectfour.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="spw4.connectfour" />
+      <option name="MAIN_CLASS_NAME" value="spw4.connectfour.ConnectFourTest" />
+      <option name="METHOD_NAME" value="testToStringEmptyBoard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectFourWebApp" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="Tomcat 10.1.15" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.15" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
@@ -169,8 +282,23 @@
     </configuration>
     <list>
       <item itemvalue="Application.Connect-Four" />
+      <item itemvalue="JUnit.BoardTest.checkDropOneTokenInvalidColumnLeft" />
+      <item itemvalue="JUnit.BoardTest.checkDropTokenWhemColFull" />
+      <item itemvalue="JUnit.ConnectFourTest" />
+      <item itemvalue="JUnit.ConnectFourTest.checkInitialize" />
+      <item itemvalue="JUnit.ConnectFourTest.testToStringEmptyBoard" />
+      <item itemvalue="Maven.ConnectFourWebApp" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.15" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ConnectFourTest" />
+        <item itemvalue="JUnit.ConnectFourTest.testToStringEmptyBoard" />
+        <item itemvalue="JUnit.ConnectFourTest.checkInitialize" />
+        <item itemvalue="JUnit.BoardTest.checkDropTokenWhemColFull" />
+        <item itemvalue="JUnit.BoardTest.checkDropOneTokenInvalidColumnLeft" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -180,7 +308,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698456716229</updated>
-      <workItem from="1698456717240" duration="5592000" />
+      <workItem from="1698456717240" duration="7614000" />
+      <workItem from="1698496339426" duration="5799000" />
+      <workItem from="1698502185572" duration="1603000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -214,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698479577350</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="drop finished">
+      <option name="closed" value="true" />
+      <created>1698480127737</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698480127737</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +361,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="drop" />
-    <option name="LAST_COMMIT_MESSAGE" value="drop" />
+    <MESSAGE value="drop finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="drop finished" />
   </component>
 </project>

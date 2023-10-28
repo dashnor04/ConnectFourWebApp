@@ -1,16 +1,13 @@
 package spw4.connectfour;
 
 public class Player {
-    private String name;
     private Color color;
 
-    public Player(String name, Color color) {
-        this.name = name;
+    public Player(Color color) {
         this.color = color;
     }
 
     public Player() {
-        this.name  = "Player";
         this.color = Color.WHITE;
     }
 

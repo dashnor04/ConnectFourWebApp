@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class Board {
 
-    private int BOARD_HEIGHT = 6;
-    private int BOARD_WIDTH = 7;
-    Color[][] grid;
+    private static final int BOARD_HEIGHT = 6;
+    private static final int BOARD_WIDTH = 7;
+    private Color[][] grid;
 
     public Board() {
         this.grid = new Color[6][7];
@@ -16,17 +16,20 @@ public class Board {
     }
 
     //start at the bottom of the selected column
-    public boolean drop(int column, Color color) {
-        int i=BOARD_HEIGHT-1;
-        while (this.grid[i][column-1] != Color.WHITE)
-            i--;
-        if (i >= 0) {
-            grid[i][column-1] = color;
-            return true;
-        } else {
-            System.out.println("Column is full");
+    public boolean drop(int col, Color token) {
+        if (col < 0 || col >= BOARD_WIDTH) {
+            System.out.println("Invalid column! Choose a column within the board range.");
             return false;
         }
+
+        for (int row = BOARD_HEIGHT - 1; row >= 0; row--) {
+            if (grid[row][col] == Color.WHITE) {
+                grid[row][col] = token;
+                return true;
+            }
+        }
+        System.out.println("Column is full! Please choose another column.");
+        return false;
     }
 
     @Override
@@ -50,5 +53,13 @@ public class Board {
             gridString.append("\n");
         }
         return gridString.toString();
+    }
+
+    Color getValueAt(int col, int row) {
+        return grid[col][row];
+    }
+
+    void setValueAt(int col, int row, Color color) {
+        grid[col][row] =  color;
     }
 }
