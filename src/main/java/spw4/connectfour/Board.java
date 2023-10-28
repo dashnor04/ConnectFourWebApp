@@ -6,7 +6,7 @@ public class Board {
 
     private static final int BOARD_HEIGHT = 6;
     private static final int BOARD_WIDTH = 7;
-    private Color[][] grid;
+    private final Color[][] grid;
 
     public Board() {
         this.grid = new Color[6][7];
