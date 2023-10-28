@@ -17,19 +17,21 @@ public class Main {
                 break;
 
         }
-
     }
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String inputColor = "";
 
-        System.out.println("Player 1 choose your color! (available: RED, YELLOW)");
-        inputColor = scanner.nextLine();
+    public static void main(String[] args) {
+        //setup players
         players = new Player[2];
         Player p1 = new Player();
         Player p2 = new Player();
         players[0] = p1;
         players[1] = p2;
+
+        Scanner scanner = new Scanner(System.in);
+        String inputColor = "";
+
+        System.out.println("Player 1 choose your color! (available: RED, YELLOW)");
+        inputColor = scanner.nextLine();
         ConnectFour game = new ConnectFour(p1, p2);
         switch (inputColor) {
             case "RED":

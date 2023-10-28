@@ -18,10 +18,10 @@ public class Board {
     //start at the bottom of the selected column
     public boolean drop(int column, Color color) {
         int i=BOARD_HEIGHT-1;
-        while (this.grid[i][column] != Color.WHITE)
+        while (this.grid[i][column-1] != Color.WHITE)
             i--;
         if (i >= 0) {
-            grid[i][column] = color;
+            grid[i][column-1] = color;
             return true;
         } else {
             System.out.println("Column is full");
