@@ -2,9 +2,6 @@ package spw4.connectfour;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.*;
 import org.mockito.junit.jupiter.*;
-import static org.hamcrest.MatcherAssert.assertThat;
-
-import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 

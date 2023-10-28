@@ -6,9 +6,6 @@ public class ConnectFour {
 
     private final static int BOARD_HEIGHT = 6, BOARD_WIDTH = 7;
 
-    private final Player player1;
-    private final Player player2;
-
     static Player[] players;
 
     private Board board;
@@ -17,8 +14,8 @@ public class ConnectFour {
 
     public ConnectFour() {
         board = new Board();
-        player1 = new Player(Color.WHITE);
-        player2 = new Player(Color.WHITE);
+        Player player1 = new Player();
+        Player player2 = new Player();
         players =  new Player[2];
         players[0] = player1;
         players[1] = player2;
@@ -169,25 +166,24 @@ public class ConnectFour {
 
     void run_game() {
         Scanner scanner = new Scanner(System.in);
-        String inputColor = "";
+        String input;
         System.out.println("Player 1 choose your color! (available: RED, YELLOW)");
-        inputColor = scanner.nextLine();
+        input = scanner.nextLine();
         ConnectFour game = new ConnectFour();
-        game.setupColor(inputColor);
+        game.setupColor(input);
         //first player is first index in player array
         game.initialize();
         System.out.println(game);
-        String inputToken = "";
 
         while (!isOver()) {
             System.out.print("command [1-7, (r)estart, (q)uit, (h)elp] > ");
-            inputToken = scanner.nextLine();
+            input = scanner.nextLine();
 
-            switch (inputToken) {
+            switch (input) {
                 case "1", "2", "3", "4", "5", "6", "7":
-                    if (getBoard().drop(Integer.parseInt(inputToken), players[currentPlayer].getColor())) {
+                    if (getBoard().drop(Integer.parseInt(input), players[currentPlayer].getColor())) {
                         currentPlayer = (currentPlayer == 0) ? 1 : 0;
-                    };
+                    }
                     break;
                 case "r":
                     initialize();

@@ -3,10 +3,6 @@ package spw4.connectfour;
 public class Player {
     private Color color;
 
-    public Player(Color color) {
-        this.color = color;
-    }
-
     public Player() {
         this.color = Color.WHITE;
     }

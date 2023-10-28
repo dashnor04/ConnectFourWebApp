@@ -9,15 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="drop finished">
-      <change afterPath="$PROJECT_DIR$/src/test/java/spw4/connectfour/BoardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/spw4/connectfour/ConnectFourTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Board.java" afterDir="false" />
+    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="game logic done">
       <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/spw4/connectfour/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/spw4/connectfour/BoardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +306,7 @@
       <updated>1698456716229</updated>
       <workItem from="1698456717240" duration="7614000" />
       <workItem from="1698496339426" duration="5799000" />
-      <workItem from="1698502185572" duration="1603000" />
+      <workItem from="1698502185572" duration="2120000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -352,7 +348,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698480127737</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="game logic done">
+      <option name="closed" value="true" />
+      <created>1698518243927</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698518243927</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,6 +366,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="drop" />
     <MESSAGE value="drop finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="drop finished" />
+    <MESSAGE value="game logic done" />
+    <option name="LAST_COMMIT_MESSAGE" value="game logic done" />
   </component>
 </project>
