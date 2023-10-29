@@ -160,5 +160,11 @@ class ConnectFourTest {
         game.getBoard().setValueAt(0,0, Color.RED);
         assertTrue(game.checkHorizontally());
     }
+
+    @Test
+    void testRestartGameWithDifferentColor() {
+
+    }
+
 }
 

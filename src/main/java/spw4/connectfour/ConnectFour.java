@@ -12,7 +12,7 @@ public class ConnectFour implements Serializable {
 
     private Board board;
 
-    int currentPlayer = 0;
+    int currentPlayer;
 
     public ConnectFour() {
         board = new Board();
@@ -25,6 +25,13 @@ public class ConnectFour implements Serializable {
     }
 
     public void initialize() {
+        currentPlayer = 0;
+        Scanner scanner = new Scanner(System.in);
+        String input;
+        System.out.println("Player 1 choose your color! (available: RED, YELLOW)");
+        input = scanner.nextLine();
+        setupColor(input);
+
         board = new Board();
         for (int row = 0; row < BOARD_HEIGHT; row++) {
             for (int col = 0; col < BOARD_WIDTH; col++) {
@@ -134,10 +141,11 @@ public class ConnectFour implements Serializable {
         System.out.println();
         System.out.println("Available commands:");
         System.out.println("-------------------");
-        System.out.println("1-7 --> choose column");
+        System.out.println("1 - 7 --> choose column");
         System.out.println("r --> restart game");
         System.out.println("q --> quit game");
         System.out.println("h --> show help");
+        System.out.println("\n");
     }
 
     void setupColor(String inputColor) {
@@ -150,17 +158,16 @@ public class ConnectFour implements Serializable {
                 players[currentPlayer].setColor("YELLOW");
                 players[currentPlayer +1].setColor("RED");
                 break;
+            default:
+                System.out.println("Color not available");
+                initialize();
         }
     }
 
     void run_game() {
         Scanner scanner = new Scanner(System.in);
         String input;
-        System.out.println("Player 1 choose your color! (available: RED, YELLOW)");
-        input = scanner.nextLine();
         ConnectFour game = new ConnectFour();
-        game.setupColor(input);
-        //first player is first index in player array
         game.initialize();
         System.out.println(game);
 
