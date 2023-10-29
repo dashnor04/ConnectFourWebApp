@@ -35,7 +35,7 @@ public class ConnectFour implements Serializable {
         board = new Board();
         for (int row = 0; row < BOARD_HEIGHT; row++) {
             for (int col = 0; col < BOARD_WIDTH; col++) {
-                board.setValueAt(row, col, Color.WHITE);
+                board.setValueAt(row, col, Color.BLANK);
             }
         }
     }
@@ -62,7 +62,7 @@ public class ConnectFour implements Serializable {
     public boolean isBoardFull() {
         for (int row = 0; row < BOARD_HEIGHT; row++) {
             for (int col = 0; col < BOARD_WIDTH; col++) {
-                if (board.getValueAt(row, col) == Color.WHITE)
+                if (board.getValueAt(row, col) == Color.BLANK)
                     return false;
             }
         }
@@ -73,7 +73,7 @@ public class ConnectFour implements Serializable {
     public boolean checkHorizontally() {
         for (int row = 0; row < BOARD_HEIGHT; row++) {
             for (int col = 0; col <= BOARD_WIDTH - 4; col++) {
-                if (board.getValueAt(row, col) != Color.WHITE &&
+                if (board.getValueAt(row, col) != Color.BLANK &&
                         board.getValueAt(row, col) == board.getValueAt(row, col+1) &&
                         board.getValueAt(row, col) == board.getValueAt(row, col+2) &&
                         board.getValueAt(row, col) == board.getValueAt(row, col+3)) {
@@ -87,7 +87,7 @@ public class ConnectFour implements Serializable {
     public boolean checkVertically() {
         for (int row = 0; row <= BOARD_HEIGHT - 4; row++) {
             for (int col = 0; col < BOARD_WIDTH; col++) {
-                if (board.getValueAt(row, col) != Color.WHITE &&
+                if (board.getValueAt(row, col) != Color.BLANK &&
                         board.getValueAt(row, col) == board.getValueAt(row+1, col) &&
                         board.getValueAt(row, col) == board.getValueAt(row+2, col) &&
                         board.getValueAt(row, col) == board.getValueAt(row+3, col)) {
@@ -101,7 +101,7 @@ public class ConnectFour implements Serializable {
     public boolean checkDiagonallyDesc() {
         for (int row = 3; row < BOARD_HEIGHT; row++) {
             for (int col = 0; col <= BOARD_WIDTH - 4; col++) {
-                if (board.getValueAt(row, col) != Color.WHITE &
+                if (board.getValueAt(row, col) != Color.BLANK &
                         board.getValueAt(row, col) == board.getValueAt(row-1, col+1) &&
                         board.getValueAt(row, col) == board.getValueAt(row-2, col+2) &&
                         board.getValueAt(row, col) == board.getValueAt(row-3, col+3)) {
@@ -115,7 +115,7 @@ public class ConnectFour implements Serializable {
     public boolean checkDiagonallyAsc() {
         for (int row = 0; row <= BOARD_HEIGHT - 4; row++) {
             for (int col = 0; col <= BOARD_WIDTH - 4; col++) {
-                if (board.getValueAt(row, col) != Color.WHITE &&
+                if (board.getValueAt(row, col) != Color.BLANK &&
                         board.getValueAt(row, col) == board.getValueAt(row+1, col+1) &&
                         board.getValueAt(row, col) == board.getValueAt(row+2, col+2) &&
                         board.getValueAt(row, col) == board.getValueAt(row+3, col+3)) {

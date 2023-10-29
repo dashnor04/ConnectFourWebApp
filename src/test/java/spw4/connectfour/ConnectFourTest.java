@@ -29,7 +29,7 @@ class ConnectFourTest {
     public void checkInitialize() {
         for (int row=0; row < Board_HEIGHT; row++) {
             for (int col=0; col < BOARD_WIDTH; col++) {
-                assertEquals(Color.WHITE, game.getBoard().getValueAt(row, col));
+                assertEquals(Color.BLANK, game.getBoard().getValueAt(row, col));
             }
         }
     }
@@ -40,7 +40,7 @@ class ConnectFourTest {
 
         for (int row=0; row < Board_HEIGHT; row++) {
             for (int col=0; col < BOARD_WIDTH; col++) {
-                testArray[row][col] = Color.WHITE;
+                testArray[row][col] = Color.BLANK;
             }
         }
 

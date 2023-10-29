@@ -16,7 +16,7 @@ class PlayerTest {
 
     @Test
     void testInit() {
-        assertEquals(Color.WHITE, player.getColor());
+        assertEquals(Color.BLANK, player.getColor());
     }
 
     @Test

@@ -4,7 +4,7 @@ public class Player {
     private Color color;
 
     public Player() {
-        this.color = Color.WHITE;
+        this.color = Color.BLANK;
     }
 
     public void setColor (String color) {

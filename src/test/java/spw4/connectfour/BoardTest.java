@@ -27,7 +27,7 @@ class BoardTest {
         Color[][] white_array = new Color[6][7];
         for (int i=0; i<BOARD_HEIGHT; i++) {
             for (int j=0; j<BOARD_WIDTH; j++) {
-                white_array[i][j] = Color.WHITE;
+                white_array[i][j] = Color.BLANK;
             }
         }
 
@@ -60,7 +60,7 @@ class BoardTest {
 
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 7; j++) {
-                if (board.getValueAt(i, j) == Color.WHITE) {
+                if (board.getValueAt(i, j) == Color.BLANK) {
                     testBoardString.append(" ");
                 } else if (board.getValueAt(i, j) == Color.RED) {
                     testBoardString.append("R");
