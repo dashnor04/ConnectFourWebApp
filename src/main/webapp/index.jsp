@@ -17,14 +17,13 @@
 
 <% if(!colorSelected) { %>
 <form id="colorPickerForm" action="${pageContext.request.contextPath}/SetPlayerColor" method="POST">
-    <h2>Choose Your Color:</h2>
+    <h3>Choose Your Color:</h3>
     <input type="radio" name="color" value="RED" id="red" required>
     <label for="red">Red</label><br>
     <input type="radio" name="color" value="YELLOW" id="yellow">
     <label for="yellow">Yellow</label><br><br>
     <button type="submit" >Start Game</button>
 </form>
-
 
 <% } else { %>
 <p>You've already chosen your color. The game will start shortly...</p>
@@ -40,6 +39,11 @@
 
 <br/>
 
+<% if (request.getAttribute("gameOver") != null && (boolean) request.getAttribute("gameOver")) { %>
+<p>The game is over!</p>
+<% } %>
+
+<br />
 
 <div id="gameBoard">
     <!-- This is where the board will be displayed -->

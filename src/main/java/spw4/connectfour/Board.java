@@ -52,8 +52,7 @@ public class Board {
                         break;
                 }
             }
-            gridString.append("|");
-            gridString.append("\n");
+            gridString.append("|\n");
             gridString.append("-----------------------------\n");
         }
         return gridString.toString();

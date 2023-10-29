@@ -26,16 +26,20 @@ public class ConnectFourServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         String columnParam = req.getParameter("column");
         System.out.println(currentColor.toString());
-
-
+        System.out.println(game.isOver());
 
         if (columnParam != null && !columnParam.isEmpty()) {
             try {
                 int column = Integer.parseInt(columnParam);
                 game.getBoard().drop(column-1, currentColor);
+
+                if (game.isOver()) {
+                    req.setAttribute("gameOver", true);
+                    req.getRequestDispatcher("/index.jsp").forward(req, resp);
+                }
 
                 // Forward the request back to the JSP to render the updated board
                 req.setAttribute("color", currentColor);
