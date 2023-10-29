@@ -10,8 +10,10 @@ public class Board {
 
     public Board() {
         this.grid = new Color[6][7];
-        for (Color[] row : grid) {
-            Arrays.fill(row, Color.WHITE);
+        for (int i = 0; i < BOARD_HEIGHT; i++) {
+            for (int j = 0; j < BOARD_WIDTH; j++) {
+                grid[i][j] = Color.WHITE; // Initialize with a default color
+            }
         }
     }
 

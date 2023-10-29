@@ -6,49 +6,44 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-@WebServlet(name = "ConnectFourServlet", value = "/")
+@WebServlet(name = "ConnectFourServlet", value = "/ConnectFour")
 public class ConnectFourServlet extends HttpServlet {
-    private String message;
     private ConnectFour game;
 
-    public void init() {
+    private Color currentColor = Color.RED;
+
+    @Override
+    public void init() throws ServletException {
         game = new ConnectFour();
     }
 
     @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        // Forward the request to the JSP for initial rendering
+        request.setAttribute("boardState", game.getBoard().toString());
+        request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        String inputColor = req.getParameter("color");
-        game.setupColor(inputColor);
-        game.initialize();
-        System.out.println(game);
+        String columnParam = req.getParameter("column");
+        currentColor = (Color) req.getSession().getAttribute("playerColor");
+        System.out.println(currentColor.toString());
 
-        while (!game.isOver()) {
-            String inputColumn = req.getParameter("column");
+        if (columnParam != null && !columnParam.isEmpty()) {
+            try {
+                int column = Integer.parseInt(columnParam);
+                game.getBoard().drop(column-1, currentColor);
 
-            switch (inputColumn) {
-                case "1", "2", "3", "4", "5", "6", "7":
-                    if (game.getBoard().drop(Integer.parseInt(inputColumn), game.players[game.currentPlayer].getColor())) {
-                        game.currentPlayer = (game.currentPlayer == 0) ? 1 : 0;
-                    }
-                    break;
-                case "r":
-                    game.initialize();
-                    break;
-                case "q":
-                    System.out.println("Ok, bye.");
-                    return;
-                case "h":
-                    game.printHelp();
-                    break;
-                default:
-                    System.out.println("Unknown command");
-                    break;
+                // Forward the request back to the JSP to render the updated board
+                req.setAttribute("color", currentColor);
+                req.setAttribute("boardState", game.getBoard().toString());
+                req.getRequestDispatcher("/index.jsp").forward(req, resp);
+            } catch (NumberFormatException | ServletException e) {
+                resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "Invalid column value");
             }
-            System.out.println(game.getBoard());
+        } else {
+            resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "Column parameter is missing");
         }
     }
 

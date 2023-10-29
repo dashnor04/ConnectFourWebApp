@@ -15,7 +15,7 @@ public class ConnectFour implements Serializable {
     int currentPlayer;
 
     public ConnectFour() {
-        board = new Board();
+        this.board = new Board();
         Player player1 = new Player();
         Player player2 = new Player();
         players =  new Player[2];
@@ -133,7 +133,7 @@ public class ConnectFour implements Serializable {
                 checkDiagonallyDesc();
     }
 
-    Board getBoard() {
+    public Board getBoard() {
         return this.board;
     }
 
@@ -196,6 +196,10 @@ public class ConnectFour implements Serializable {
             }
             System.out.println(board);
         }
+    }
+
+    public Player[] getPlayers() {
+        return players;
     }
 
 }
