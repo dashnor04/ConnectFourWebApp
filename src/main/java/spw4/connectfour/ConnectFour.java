@@ -60,9 +60,7 @@ public class ConnectFour implements Serializable {
     }
 
 
-
-    public boolean isWon() {
-        // Check horizontally
+    public boolean checkHorizontally() {
         for (int row = 0; row < BOARD_HEIGHT; row++) {
             for (int col = 0; col <= BOARD_WIDTH - 4; col++) {
                 if (board.getValueAt(row, col) != Color.WHITE &&
@@ -73,8 +71,10 @@ public class ConnectFour implements Serializable {
                 }
             }
         }
+        return false;
+    }
 
-        // Check vertically
+    public boolean checkVertically() {
         for (int row = 0; row <= BOARD_HEIGHT - 4; row++) {
             for (int col = 0; col < BOARD_WIDTH; col++) {
                 if (board.getValueAt(row, col) != Color.WHITE &&
@@ -85,8 +85,10 @@ public class ConnectFour implements Serializable {
                 }
             }
         }
+        return false;
+    }
 
-        // Check diagonally (ascending)
+    public boolean checkDiagonallyDesc() {
         for (int row = 3; row < BOARD_HEIGHT; row++) {
             for (int col = 0; col <= BOARD_WIDTH - 4; col++) {
                 if (board.getValueAt(row, col) != Color.WHITE &
@@ -97,8 +99,10 @@ public class ConnectFour implements Serializable {
                 }
             }
         }
+        return false;
+    }
 
-        // Check diagonally (descending)
+    public boolean checkDiagonallyAsc() {
         for (int row = 0; row <= BOARD_HEIGHT - 4; row++) {
             for (int col = 0; col <= BOARD_WIDTH - 4; col++) {
                 if (board.getValueAt(row, col) != Color.WHITE &&
@@ -109,8 +113,14 @@ public class ConnectFour implements Serializable {
                 }
             }
         }
-
         return false;
+    }
+
+    public boolean isWon() {
+        return checkHorizontally() ||
+                checkVertically() ||
+                checkDiagonallyAsc() ||
+                checkDiagonallyDesc();
     }
 
     @Override
