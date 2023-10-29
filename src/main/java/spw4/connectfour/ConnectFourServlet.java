@@ -22,13 +22,15 @@ public class ConnectFourServlet extends HttpServlet {
         // Forward the request to the JSP for initial rendering
         request.setAttribute("boardState", game.getBoard().toString());
         request.getRequestDispatcher("/index.jsp").forward(request, response);
+        currentColor = (Color) request.getSession().getAttribute("playerColor");
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String columnParam = req.getParameter("column");
-        currentColor = (Color) req.getSession().getAttribute("playerColor");
         System.out.println(currentColor.toString());
+
+
 
         if (columnParam != null && !columnParam.isEmpty()) {
             try {
@@ -39,6 +41,8 @@ public class ConnectFourServlet extends HttpServlet {
                 req.setAttribute("color", currentColor);
                 req.setAttribute("boardState", game.getBoard().toString());
                 req.getRequestDispatcher("/index.jsp").forward(req, resp);
+
+                currentColor = (currentColor == Color.RED) ? Color.YELLOW  : Color.RED;
             } catch (NumberFormatException | ServletException e) {
                 resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "Invalid column value");
             }

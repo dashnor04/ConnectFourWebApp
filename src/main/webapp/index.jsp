@@ -6,7 +6,7 @@
     <title>Connect Four Game</title>
 </head>
 <body>
-<h1>Connect Four Game Board</h1>
+<h1>Connect Four Game</h1>
 
 <%
     boolean colorSelected = false; // Assume the color is not selected
@@ -22,8 +22,10 @@
     <label for="red">Red</label><br>
     <input type="radio" name="color" value="YELLOW" id="yellow">
     <label for="yellow">Yellow</label><br><br>
-    <button type="submit">Start Game</button>
+    <button type="submit" >Start Game</button>
 </form>
+
+
 <% } else { %>
 <p>You've already chosen your color. The game will start shortly...</p>
 <%-- You can add a loading message or direct the user to the game page here --%>
@@ -35,6 +37,9 @@
     <input id="column" type="number" name="column" min="1" max="7">
     <button type="submit">Place Token!</button>
 </form>
+
+<br/>
+
 
 <div id="gameBoard">
     <!-- This is where the board will be displayed -->
