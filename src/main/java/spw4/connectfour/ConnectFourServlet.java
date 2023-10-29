@@ -6,7 +6,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-@WebServlet(name = "ConnectFourServlet", value = "/Connect-Four")
+@WebServlet(name = "ConnectFourServlet", value = "/")
 public class ConnectFourServlet extends HttpServlet {
     private String message;
     private ConnectFour game;
@@ -17,7 +17,6 @@ public class ConnectFourServlet extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
     }
 
     @Override
@@ -28,7 +27,6 @@ public class ConnectFourServlet extends HttpServlet {
         System.out.println(game);
 
         while (!game.isOver()) {
-            System.out.print("command [1-7, (r)estart, (q)uit, (h)elp] > ");
             String inputColumn = req.getParameter("column");
 
             switch (inputColumn) {

@@ -39,10 +39,13 @@ public class ConnectFour implements Serializable {
             return true;
         }
        if (isWon()) {
+           //when a player wins the game changes back to the loser's turn and then evaluates the win, so the
+           //curren player has to be set back to the winner
+           currentPlayer = (currentPlayer == 0) ? 1 : 0;
            if (currentPlayer == 1) {
-               System.out.println("Player1 won!");
+               System.out.println(players[currentPlayer].getColor().toString() + "won!");
            } else {
-               System.out.println("Player2 won!");
+               System.out.println(players[currentPlayer].getColor().toString() +" won!");
            }
            return true;
        }
@@ -123,32 +126,6 @@ public class ConnectFour implements Serializable {
                 checkDiagonallyDesc();
     }
 
-    @Override
-    public String toString() {
-        StringBuilder boardString = new StringBuilder();
-
-
-        for (int row=0; row<6; row++) {
-            for (int col=0; col<7; col++) {
-                switch (board.getValueAt(row, col)) {
-                    case YELLOW:
-                        boardString.append(" Y ");
-                        break;
-                    case RED:
-                        boardString.append(" R ");
-                        break;
-                    case WHITE:
-                        boardString.append("  ");
-                        break;
-                }
-            }
-
-            boardString.append("\n");
-        }
-
-        return  boardString.toString();
-    }
-
     Board getBoard() {
         return this.board;
     }
@@ -193,7 +170,7 @@ public class ConnectFour implements Serializable {
 
             switch (input) {
                 case "1", "2", "3", "4", "5", "6", "7":
-                    if (getBoard().drop(Integer.parseInt(input), players[currentPlayer].getColor())) {
+                    if (getBoard().drop(Integer.parseInt(input)-1, players[currentPlayer].getColor())) {
                         currentPlayer = (currentPlayer == 0) ? 1 : 0;
                     }
                     break;

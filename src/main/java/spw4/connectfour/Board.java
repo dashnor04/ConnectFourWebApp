@@ -40,17 +40,19 @@ public class Board {
             for (int j=0; j<7; j++) {
                 switch (grid[i][j]) {
                     case WHITE:
-                        gridString.append(" ");
+                        gridString.append("|   ");
                         break;
                     case RED:
-                        gridString.append("R");
+                        gridString.append("| R ");
                         break;
                     case YELLOW:
-                        gridString.append("Y");
+                        gridString.append("| Y ");
                         break;
                 }
             }
+            gridString.append("|");
             gridString.append("\n");
+            gridString.append("-----------------------------\n");
         }
         return gridString.toString();
     }
