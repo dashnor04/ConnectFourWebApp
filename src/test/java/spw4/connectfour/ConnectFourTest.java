@@ -26,9 +26,9 @@ class ConnectFourTest {
     }
     @Test
     public void checkInitialize() {
-        for (int i=0; i < Board_HEIGHT; i++) {
-            for (int j=0; j < BOARD_WIDTH; j++) {
-                assertEquals(Color.WHITE, game.getBoard().getValueAt(i, j));
+        for (int row=0; row < Board_HEIGHT; row++) {
+            for (int col=0; col < BOARD_WIDTH; col++) {
+                assertEquals(Color.WHITE, game.getBoard().getValueAt(row, col));
             }
         }
     }
@@ -36,16 +36,27 @@ class ConnectFourTest {
     @Test void testToStringEmptyBoard() {
         Color[][] testArray = new Color[6][7];
 
-        for (int i=0; i < Board_HEIGHT; i++) {
-            for (int j=0; j < BOARD_WIDTH; j++) {
-                testArray[i][j] = Color.WHITE;
+        for (int row=0; row < Board_HEIGHT; row++) {
+            for (int col=0; col < BOARD_WIDTH; col++) {
+                testArray[row][col] = Color.WHITE;
             }
         }
 
-        for (int i=0; i < Board_HEIGHT; i++) {
-            for (int j=0; j < BOARD_WIDTH; j++) {
-                assertEquals(testArray[i][j], game.getBoard().getValueAt(i, j));
+        for (int row=0; row < Board_HEIGHT; row++) {
+            for (int col=0; col < BOARD_WIDTH; col++) {
+                assertEquals(testArray[row][col], game.getBoard().getValueAt(row, col));
             }
         }
+    }
+
+    @Test
+    void testIsOver() {
+        for (int row=0; row < Board_HEIGHT; row++) {
+            for (int col=0; col < BOARD_WIDTH; col++) {
+                game.getBoard().setValueAt(row, col, Color.RED);
+            }
+        }
+
+        assertTrue(game.isOver());
     }
 }

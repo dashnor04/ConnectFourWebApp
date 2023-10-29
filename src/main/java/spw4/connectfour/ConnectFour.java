@@ -1,11 +1,13 @@
 package spw4.connectfour;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
-public class ConnectFour {
+public class ConnectFour implements Serializable {
 
     private final static int BOARD_HEIGHT = 6, BOARD_WIDTH = 7;
 
+    //with the players array and currentPlayer variable we know whose turn it is
     static Player[] players;
 
     private Board board;
@@ -24,9 +26,9 @@ public class ConnectFour {
 
     public void initialize() {
         board = new Board();
-        for (int i = 0; i < BOARD_HEIGHT; i++) {
-            for (int j = 0; j < BOARD_WIDTH; j++) {
-                board.setValueAt(i, j, Color.WHITE);
+        for (int row = 0; row < BOARD_HEIGHT; row++) {
+            for (int col = 0; col < BOARD_WIDTH; col++) {
+                board.setValueAt(row, col, Color.WHITE);
             }
         }
     }
@@ -116,17 +118,17 @@ public class ConnectFour {
         StringBuilder boardString = new StringBuilder();
 
 
-        for (int i=0; i<6; i++) {
-            for (int j=0; j<7; j++) {
-                switch (board.getValueAt(i, j)) {
+        for (int row=0; row<6; row++) {
+            for (int col=0; col<7; col++) {
+                switch (board.getValueAt(row, col)) {
                     case YELLOW:
-                        boardString.append("Y ");
+                        boardString.append(" Y ");
                         break;
                     case RED:
-                        boardString.append("R ");
+                        boardString.append(" R ");
                         break;
                     case WHITE:
-                        boardString.append(" ");
+                        boardString.append("  ");
                         break;
                 }
             }
