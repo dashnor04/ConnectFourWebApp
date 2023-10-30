@@ -20,7 +20,7 @@ public class ConnectFourServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         // Forward the request to the JSP for initial rendering
-        request.setAttribute("boardState", game.getBoard().toString());
+        request.setAttribute("boardState", game.getBoard());
         request.getRequestDispatcher("/index.jsp").forward(request, response);
         currentColor = (Color) request.getSession().getAttribute("playerColor");
     }
@@ -28,8 +28,6 @@ public class ConnectFourServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         String columnParam = req.getParameter("column");
-        System.out.println(currentColor.toString());
-        System.out.println(game.isOver());
 
         if (columnParam != null && !columnParam.isEmpty()) {
             try {

@@ -6,13 +6,10 @@ import java.util.Scanner;
 public class ConnectFour implements Serializable {
 
     private final static int BOARD_HEIGHT = 6, BOARD_WIDTH = 7;
-
     //with the players array and currentPlayer variable we know whose turn it is
-    static Player[] players;
-
+    private static Player[] players;
     private Board board;
-
-    int currentPlayer;
+    private int currentPlayer;
 
     public ConnectFour() {
         this.board = new Board();
@@ -164,42 +161,15 @@ public class ConnectFour implements Serializable {
         }
     }
 
-    void run_game() {
-        Scanner scanner = new Scanner(System.in);
-        String input;
-        ConnectFour game = new ConnectFour();
-        game.initialize();
-        System.out.println(game);
-
-        while (!isOver()) {
-            System.out.print("command [1-7, (r)estart, (q)uit, (h)elp] > ");
-            input = scanner.nextLine();
-
-            switch (input) {
-                case "1", "2", "3", "4", "5", "6", "7":
-                    if (getBoard().drop(Integer.parseInt(input)-1, players[currentPlayer].getColor())) {
-                        currentPlayer = (currentPlayer == 0) ? 1 : 0;
-                    }
-                    break;
-                case "r":
-                    initialize();
-                    break;
-                case "q":
-                    System.out.println("Ok, bye.");
-                    return;
-                case "h":
-                    printHelp();
-                    break;
-                default:
-                    System.out.println("Unknown command");
-                    break;
-            }
-            System.out.println(board);
-        }
-    }
-
     public Player[] getPlayers() {
         return players;
     }
 
+    public int getCurrentPlayer() {
+        return currentPlayer;
+    }
+
+    public void setCurrentPlayer(int val) {
+        currentPlayer = val;
+    }
 }

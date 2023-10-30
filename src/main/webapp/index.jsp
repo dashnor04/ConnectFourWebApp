@@ -24,10 +24,6 @@
     <label for="yellow">Yellow</label><br><br>
     <button type="submit" >Start Game</button>
 </form>
-
-<% } else { %>
-<p>You've already chosen your color. The game will start shortly...</p>
-<%-- You can add a loading message or direct the user to the game page here --%>
 <% } %>
 
 <!-- Game Board Form -->
@@ -37,7 +33,6 @@
     <button type="submit">Place Token!</button>
 </form>
 
-<br/>
 
 <% if (request.getAttribute("gameOver") != null && (boolean) request.getAttribute("gameOver")) { %>
 <p>The game is over!</p>
@@ -45,7 +40,7 @@
 
 <br />
 
-<div id="gameBoard">
+<div id="gameBoard" >
     <!-- This is where the board will be displayed -->
     <pre>
         <%= request.getAttribute("boardState") %>

@@ -20,8 +20,8 @@ class ConnectFourTest {
 
     @Test
     public void testConstr() {
-        assertEquals(0, game.currentPlayer);
-        assertNotNull(game.players);
+        assertEquals(0, game.getCurrentPlayer());
+        assertNotNull(game.getPlayers());
         assertNotNull(game);
 
     }

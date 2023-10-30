@@ -58,20 +58,24 @@ class BoardTest {
     public void testToString() {
         StringBuilder testBoardString = new StringBuilder();
 
-        for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < 7; j++) {
-                if (board.getValueAt(i, j) == Color.BLANK) {
-                    testBoardString.append(" ");
-                } else if (board.getValueAt(i, j) == Color.RED) {
-                    testBoardString.append("R");
-                } else if (board.getValueAt(i, j) == Color.YELLOW)
-                    testBoardString.append("Y");
+        for (int i = 0; i < BOARD_HEIGHT; i++) {
+            for (int j = 0; j < BOARD_WIDTH; j++) {
+                switch (board.getValueAt(i, j)) {
+                    case BLANK:
+                        testBoardString.append("|   ");
+                        break;
+                    case RED:
+                        testBoardString.append("| R ");
+                        break;
+                    case YELLOW:
+                        testBoardString.append("| Y ");
+                        break;
+                }
             }
-
-            testBoardString.append("\n");
+            testBoardString.append("|\n");
+            testBoardString.append("+---+---+---+---+---+---+---+\n");
         }
 
-        System.out.println(testBoardString);
         assertEquals(testBoardString.toString(), board.toString());
     }
 }

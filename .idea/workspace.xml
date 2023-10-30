@@ -9,7 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="game over message is being shown" />
+    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="game over message is being shown">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFourServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFourServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/spw4/connectfour/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/spw4/connectfour/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/spw4/connectfour/ConnectFourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/spw4/connectfour/ConnectFourTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +82,7 @@
       <recent name="C:\Users\dashn_7v81cvp\Documents\ConnectFourWebApp" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.15">
+  <component name="RunManager" selected="Application.Connect-Four">
     <configuration name="Connect-Four" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="spw4.connectfour.Main" />
       <module name="ConnectFourWebApp" />
@@ -93,6 +101,22 @@
       <option name="PACKAGE_NAME" value="spw4.connectfour" />
       <option name="MAIN_CLASS_NAME" value="spw4.connectfour.BoardTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConnectFourWebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spw4.connectfour.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="spw4.connectfour" />
+      <option name="MAIN_CLASS_NAME" value="spw4.connectfour.BoardTest" />
+      <option name="METHOD_NAME" value="testToString" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,22 +147,6 @@
       <option name="PACKAGE_NAME" value="spw4.connectfour" />
       <option name="MAIN_CLASS_NAME" value="spw4.connectfour.ConnectFourTest" />
       <option name="METHOD_NAME" value="testToStringFullBoard" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConnectFourTest.testisWon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ConnectFourWebApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spw4.connectfour.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="spw4.connectfour" />
-      <option name="MAIN_CLASS_NAME" value="spw4.connectfour.ConnectFourTest" />
-      <option name="METHOD_NAME" value="testisWon" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -274,8 +282,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.Connect-Four" />
+      <item itemvalue="JUnit.BoardTest.testToString" />
       <item itemvalue="JUnit.ConnectFourTest.testToStringFullBoard" />
-      <item itemvalue="JUnit.ConnectFourTest.testisWon" />
       <item itemvalue="JUnit.PlayerTest" />
       <item itemvalue="JUnit.BoardTest" />
       <item itemvalue="JUnit.ConnectFourTest" />
@@ -284,11 +292,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PlayerTest" />
+        <item itemvalue="JUnit.BoardTest.testToString" />
         <item itemvalue="JUnit.BoardTest" />
+        <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="JUnit.ConnectFourTest" />
         <item itemvalue="JUnit.ConnectFourTest.testToStringFullBoard" />
-        <item itemvalue="JUnit.ConnectFourTest.testisWon" />
       </list>
     </recent_temporary>
   </component>
@@ -307,6 +315,10 @@
       <workItem from="1698570244191" duration="1834000" />
       <workItem from="1698587343141" duration="12784000" />
       <workItem from="1698603758334" duration="9748000" />
+      <workItem from="1698654361927" duration="665000" />
+      <workItem from="1698662940211" duration="789000" />
+      <workItem from="1698663788384" duration="2000" />
+      <workItem from="1698663949505" duration="1909000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
