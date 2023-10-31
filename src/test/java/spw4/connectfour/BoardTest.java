@@ -62,18 +62,17 @@ class BoardTest {
             for (int j = 0; j < BOARD_WIDTH; j++) {
                 switch (board.getValueAt(i, j)) {
                     case BLANK:
-                        testBoardString.append("|   ");
+                        testBoardString.append(" ");
                         break;
                     case RED:
-                        testBoardString.append("| R ");
+                        testBoardString.append("R");
                         break;
                     case YELLOW:
-                        testBoardString.append("| Y ");
+                        testBoardString.append("Y");
                         break;
                 }
             }
-            testBoardString.append("|\n");
-            testBoardString.append("+---+---+---+---+---+---+---+\n");
+            testBoardString.append("\n");
         }
 
         assertEquals(testBoardString.toString(), board.toString());

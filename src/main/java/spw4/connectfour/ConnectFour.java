@@ -33,6 +33,7 @@ public class ConnectFour implements Serializable {
 
     public boolean isOver() {
         if (isBoardFull()) {
+            //tie
             System.out.println("Noone Won, game is a tie!");
             return true;
         }
