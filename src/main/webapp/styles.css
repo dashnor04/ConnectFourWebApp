@@ -47,39 +47,27 @@ p {
     color: #e74c3c;
 }
 
-.red-token {
-    background-color: red; /* Color for the red tokens */
+#red-token {
+    background-color: red;
+    /* Add any specific styling for the red token */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
-.yellow-token {
-    background-color: yellow; /* Color for the yellow tokens */
+#yellow-token {
+    background-color: yellow;
+    /* Add any specific styling for the yellow token */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
-/* Game Board */
-#gameBoard {
-    display: flex;
-    flex-wrap: wrap;
+
+/* Board Display */
+.game-board {
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-}
-
-/* Game Board cell */
-#gameBoard pre {
-    margin: 0;
-    padding: 10px;
-    background-color: #f1c40f;
-    border: 1px solid #e67e22;
-    border-radius: 5px;
-    font-size: 18px;
-    line-height: 1.5;
-    white-space: pre-wrap;
-    width: 400px; /* Adjust width as needed */
-}
-
-/* Adjust the display of the board state if required */
-
-.game-board {
     display: flex;
     flex-direction: column;
 }
@@ -89,9 +77,10 @@ p {
 }
 
 .cell {
-    width: 50px; /* Adjust size based on your layout */
-    height: 50px; /* Adjust size based on your layout */
-    padding: 10px;
-    border: 1px solid #000;
-    /* Other styling properties like background color for cells based on game state */
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

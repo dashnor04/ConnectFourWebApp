@@ -5,7 +5,6 @@
 <head>
     <title>Connect Four Game</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-
 </head>
 
 <body>
@@ -22,7 +21,7 @@
 
 
 <% if(!colorSelected) { %>
-<form id="colorPickerForm" action="${pageContext.request.contextPath}/SetPlayerColor" method="POST">
+<form id="colorPickerForm" action="${pageContext.request.contextPath}/ConnectFour" method="POST">
     <h3>Choose Your Color:</h3>
     <input type="radio" name="color" value="RED" id="red" required>
     <label for="red">Red</label><br>
@@ -39,6 +38,8 @@
 </form>
 <% } %>
 
+<!-- board representation -->
+<%  if (request.getAttribute("boardState") != null) { %>
 
 <!-- Game Board Form -->
 <form id="moveForm" action="${pageContext.request.contextPath}/ConnectFour" method="POST">
@@ -51,15 +52,46 @@
     <button type="submit" value="7" name="column" id="column7"> + </button>
 </form>
 
-<!--
-<div id="gameBoard" >
-     This is where the board will be displayed
-    <pre>
-        <%= request.getAttribute("boardState") %>
-    </pre>
-</div>
--->
 
+<div id="gameBoard" class="game-board">
+    <%
+        String boardState = (String) request.getAttribute("boardState").toString();
+        String[] rows = boardState.split("\\n"); // Split the string representation into rows
+        for (String row : rows) {
+    %>
+    <div class="row">
+        <%
+            for (int i = 0; i < row.length(); i++) {
+                // Iterate through each character in the row (representing each cell)
+                if (row.charAt(i) == 'R' || row.charAt(i) == 'Y' || row.charAt(i) == ' ') {
+                    char cell = row.charAt(i);
+                    switch (cell) {
+                        case 'R': %>
+        <div class="cell">
+            <div id="red-token"></div>
+        </div>
+        <% break;
+            case 'Y': %>
+        <div class="cell">
+            <div id="yellow-token"></div>
+        </div>
+        <% break;
+            default: %>
+        <div class="cell">
+            <!-- Empty cell -->
+        </div>
+        <% break;
+        }
+        }
+        }
+        %>
+    </div>
+    <% } %>
+</div>
+<% } %>
+
+
+<!-- board representation
 <%  if (request.getAttribute("boardState") != null) {%>
 <div id="gameBoard" class="game-board">
     <%
@@ -74,9 +106,12 @@
                 // Iterate through each character in the row (representing each cell)
                 if (row.charAt(i) == 'R' || row.charAt(i) == 'Y' || row.charAt(i) == ' ') {
                     char cell = row.charAt(i);
-                %>
+                    switch (cell) {
+                        case 'R': %>
+                        <div id="red-token"> </div>
+                    <% } %>
         <div class="cell">
-            <%= cell %> <!-- Display the cell value -->
+            <%= cell %>  Display the cell value
         </div>
         <%
             } %>
@@ -87,23 +122,6 @@
 <% }%>
 </div>
 <%} %>
-
-
-<!--
-<div id="gameBoard" >
-     This is where the board will be displayed
-<pre>
-        <%  if (request.getAttribute("boardState") != null) {
-            String board = request.getAttribute("boardState").toString();
-            for (int i=0; i<board.length(); i++) {
-                if (board.charAt(i) == 'R') { %>
-                    <div id="red-token"> Here </div>
-             <% }
-            }
-        }%>
-    </pre>
-</div>
 -->
-
 </body>
 </html>
