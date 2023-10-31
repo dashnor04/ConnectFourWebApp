@@ -9,8 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="code cleanup 2">
+    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="ConnectFour v1.0.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +82,7 @@
       <recent name="C:\Users\dashn_7v81cvp\Documents\ConnectFourWebApp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Connect-Four">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.15">
     <configuration name="Connect-Four" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="spw4.connectfour.Main" />
       <module name="ConnectFourWebApp" />
@@ -325,7 +327,7 @@
       <workItem from="1698698504200" duration="836000" />
       <workItem from="1698749805129" duration="3912000" />
       <workItem from="1698759380176" duration="5780000" />
-      <workItem from="1698775891964" duration="1413000" />
+      <workItem from="1698775891964" duration="3376000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -511,7 +513,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698776940111</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ConnectFour v1.0.0">
+      <option name="closed" value="true" />
+      <created>1698777477616</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1698777477616</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,6 +556,7 @@
     <MESSAGE value="restart button works" />
     <MESSAGE value="code cleanup 1" />
     <MESSAGE value="code cleanup 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="code cleanup 2" />
+    <MESSAGE value="ConnectFour v1.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="ConnectFour v1.0.0" />
   </component>
 </project>

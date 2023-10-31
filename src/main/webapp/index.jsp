@@ -32,13 +32,15 @@
 
 <% if(colorSelected) { %>
 <form action="${pageContext.request.contextPath}/RestartGame" method="GET">
-    <button type="submit">Restart Game</button>
+    <button type="submit" style="padding-bottom: 10px">Restart Game</button>
 </form>
 <% } %>
 
 <!-- board representation -->
 <%  if (request.getAttribute("boardState") != null) { %>
 
+
+<% if (request.getAttribute("gameOver") == null || !(boolean) request.getAttribute("gameOver")) {%>
 <!-- Game Board Form -->
 <form id="moveForm" action="${pageContext.request.contextPath}/ConnectFour" method="POST">
     <button type="submit" value="1" name="column" id="column1"> + </button>
@@ -49,7 +51,7 @@
     <button type="submit" value="6" name="column" id="column6"> + </button>
     <button type="submit" value="7" name="column" id="column7"> + </button>
 </form>
-
+<% } %>
 
 <div id="gameBoard" class="game-board">
     <%
@@ -66,7 +68,8 @@
                     switch (cell) {
                         case 'R': %>
         <div class="cell">
-            <div id="red-token" class="token"></div>
+            <!-- empty tag doesnt work in some browsers -->
+            <div id="red-token"></div>
         </div>
         <% break;
             case 'Y': %>
@@ -76,7 +79,7 @@
         <% break;
             default: %>
         <div class="cell">
-            <!-- Empty cell -->
+            <div id="white-token"></div>
         </div>
         <% break;
         }

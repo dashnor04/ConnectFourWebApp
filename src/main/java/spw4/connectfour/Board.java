@@ -50,9 +50,8 @@ public class Board {
                         break;
                 }
             }
-            gridString.append("+---+---+---+---+---+---+---+\n");
+            gridString.append("\n");
         }
-        gridString.delete(0, 0);
         return gridString.toString();
     }
 
