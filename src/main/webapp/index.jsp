@@ -54,7 +54,7 @@
 
 <div id="gameBoard" class="game-board">
     <%
-        String boardState = (String) request.getAttribute("boardState").toString();
+        String boardState = request.getAttribute("boardState").toString();
         String[] rows = boardState.split("\\n"); // Split the string representation into rows
         for (String row : rows) {
     %>
@@ -89,38 +89,5 @@
 </div>
 <% } %>
 
-
-<!-- board representation
-<%  if (request.getAttribute("boardState") != null) {%>
-<div id="gameBoard" class="game-board">
-    <%
-        String boardState = (String) request.getAttribute("boardState").toString();
-        String[] rows = boardState.split("\\n"); // Split the string representation into rows
-        for (String row : rows) {
-            // Iterate through each row
-    %>
-    <div class="row">
-        <%
-            for (int i = 0; i < row.length(); i++) {
-                // Iterate through each character in the row (representing each cell)
-                if (row.charAt(i) == 'R' || row.charAt(i) == 'Y' || row.charAt(i) == ' ') {
-                    char cell = row.charAt(i);
-                    switch (cell) {
-                        case 'R': %>
-                        <div id="red-token"> </div>
-                    <% } %>
-        <div class="cell">
-            <%= cell %>  Display the cell value
-        </div>
-        <%
-            } %>
-
-        <%    }
-    %>
-</div>
-<% }%>
-</div>
-<%} %>
--->
 </body>
 </html>
