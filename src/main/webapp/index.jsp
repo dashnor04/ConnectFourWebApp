@@ -18,9 +18,6 @@
 
 <% if (request.getAttribute("gameOver") != null && (boolean) request.getAttribute("gameOver")) { %>
 <h2>Game Over! <%= request.getAttribute("winner")%> Won</h2>
-<form action="${pageContext.request.contextPath}/RestartGame" method="GET">
-    <button type="submit">Restart Game</button>
-</form>
 <% } %>
 
 
@@ -36,6 +33,13 @@
 <% } %>
 
 
+<% if(colorSelected) { %>
+<form action="${pageContext.request.contextPath}/RestartGame" method="GET">
+    <button type="submit">Restart Game</button>
+</form>
+<% } %>
+
+
 <!-- Game Board Form -->
 <form id="moveForm" action="${pageContext.request.contextPath}/ConnectFour" method="POST">
     <button type="submit" value="1" name="column" id="column1"> + </button>
@@ -47,13 +51,59 @@
     <button type="submit" value="7" name="column" id="column7"> + </button>
 </form>
 
-
+<!--
 <div id="gameBoard" >
-    <!-- This is where the board will be displayed -->
+     This is where the board will be displayed
     <pre>
         <%= request.getAttribute("boardState") %>
     </pre>
 </div>
+-->
+
+<%  if (request.getAttribute("boardState") != null) {%>
+<div id="gameBoard" class="game-board">
+    <%
+        String boardState = (String) request.getAttribute("boardState").toString();
+        String[] rows = boardState.split("\\n"); // Split the string representation into rows
+        for (String row : rows) {
+            // Iterate through each row
+    %>
+    <div class="row">
+        <%
+            for (int i = 0; i < row.length(); i++) {
+                // Iterate through each character in the row (representing each cell)
+                if (row.charAt(i) == 'R' || row.charAt(i) == 'Y' || row.charAt(i) == ' ') {
+                    char cell = row.charAt(i);
+                %>
+        <div class="cell">
+            <%= cell %> <!-- Display the cell value -->
+        </div>
+        <%
+            } %>
+
+        <%    }
+    %>
+</div>
+<% }%>
+</div>
+<%} %>
+
+
+<!--
+<div id="gameBoard" >
+     This is where the board will be displayed
+<pre>
+        <%  if (request.getAttribute("boardState") != null) {
+            String board = request.getAttribute("boardState").toString();
+            for (int i=0; i<board.length(); i++) {
+                if (board.charAt(i) == 'R') { %>
+                    <div id="red-token"> Here </div>
+             <% }
+            }
+        }%>
+    </pre>
+</div>
+-->
 
 </body>
 </html>

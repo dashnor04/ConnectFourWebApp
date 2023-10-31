@@ -60,8 +60,7 @@ public class ConnectFourServlet extends HttpServlet {
         } else {
             game.initialize();
             game.setCurrentPlayer(1);
-            req.setAttribute("color", currentColor);
-            req.setAttribute("boardState", game.getBoard().toString());
+            req.setAttribute("boardState", game.getBoard());
             req.getRequestDispatcher("/index.jsp").forward(req, resp);
         }
     }

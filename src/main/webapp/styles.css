@@ -33,7 +33,7 @@ button[type="submit"] {
 }
 
 button[type="submit"] {
-    padding: 10px 20px;
+    padding: 15px 25px;
     margin: 5px;
     background-color: #27ae60;
     color: #fff;
@@ -45,24 +45,6 @@ button[type="submit"] {
 /* Game Over message */
 p {
     color: #e74c3c;
-}
-
-.game-board {
-    display: grid;
-    grid-template-columns: repeat(7, 50px); /* Adjust size as needed */
-    grid-gap: 5px; /* Adjust gap between cells */
-    background-color: #6699cc; /* Change the background color as desired */
-    padding: 10px;
-}
-
-.cell {
-    width: 50px; /* Adjust cell size */
-    height: 50px; /* Adjust cell size */
-    border-radius: 50%; /* Makes cells circular */
-    border: 2px solid #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .red-token {
@@ -96,3 +78,20 @@ p {
 }
 
 /* Adjust the display of the board state if required */
+
+.game-board {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 50px; /* Adjust size based on your layout */
+    height: 50px; /* Adjust size based on your layout */
+    padding: 10px;
+    border: 1px solid #000;
+    /* Other styling properties like background color for cells based on game state */
+}
