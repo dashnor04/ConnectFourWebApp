@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="ConnectFour v1.0.1 - beautify board, place board in middle of the screen">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/spw4/connectfour/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/spw4/connectfour/BoardTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="ConnectFour v1.0.2 - improved unit tests, updated dependencies" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -329,7 +324,7 @@
       <workItem from="1698759380176" duration="5780000" />
       <workItem from="1698775891964" duration="3376000" />
       <workItem from="1698779402197" duration="141000" />
-      <workItem from="1698779615178" duration="992000" />
+      <workItem from="1698779615178" duration="1156000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -531,7 +526,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698779443900</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="ConnectFour v1.0.2 - improved unit tests, updated dependencies">
+      <option name="closed" value="true" />
+      <created>1698780628013</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1698780628013</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,6 +571,7 @@
     <MESSAGE value="code cleanup 2" />
     <MESSAGE value="ConnectFour v1.0.0" />
     <MESSAGE value="ConnectFour v1.0.1 - beautify board, place board in middle of the screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="ConnectFour v1.0.1 - beautify board, place board in middle of the screen" />
+    <MESSAGE value="ConnectFour v1.0.2 - improved unit tests, updated dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="ConnectFour v1.0.2 - improved unit tests, updated dependencies" />
   </component>
 </project>
