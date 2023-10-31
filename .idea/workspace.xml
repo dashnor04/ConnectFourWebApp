@@ -9,12 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="changed board representation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFourServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFourServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/SetPlayerColorServlet.java" beforeDir="false" />
+    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="restart button works">
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,7 +324,7 @@
       <workItem from="1698698504200" duration="836000" />
       <workItem from="1698749805129" duration="3912000" />
       <workItem from="1698759380176" duration="5780000" />
-      <workItem from="1698775891964" duration="300000" />
+      <workItem from="1698775891964" duration="699000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -482,7 +478,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698771859982</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="restart button works">
+      <option name="closed" value="true" />
+      <created>1698776512024</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1698776512024</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,6 +518,7 @@
     <MESSAGE value="game over message is being shown" />
     <MESSAGE value="game beautified, restart button works, winner displayed, game loop works" />
     <MESSAGE value="changed board representation" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed board representation" />
+    <MESSAGE value="restart button works" />
+    <option name="LAST_COMMIT_MESSAGE" value="restart button works" />
   </component>
 </project>
