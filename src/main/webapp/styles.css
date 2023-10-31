@@ -1,0 +1,98 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Color picker form */
+#colorPickerForm {
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Game Board Form */
+#moveForm {
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Game Over message */
+p {
+    color: #e74c3c;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(7, 50px); /* Adjust size as needed */
+    grid-gap: 5px; /* Adjust gap between cells */
+    background-color: #6699cc; /* Change the background color as desired */
+    padding: 10px;
+}
+
+.cell {
+    width: 50px; /* Adjust cell size */
+    height: 50px; /* Adjust cell size */
+    border-radius: 50%; /* Makes cells circular */
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red-token {
+    background-color: red; /* Color for the red tokens */
+}
+
+.yellow-token {
+    background-color: yellow; /* Color for the yellow tokens */
+}
+
+/* Game Board */
+#gameBoard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Game Board cell */
+#gameBoard pre {
+    margin: 0;
+    padding: 10px;
+    background-color: #f1c40f;
+    border: 1px solid #e67e22;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    width: 400px; /* Adjust width as needed */
+}
+
+/* Adjust the display of the board state if required */

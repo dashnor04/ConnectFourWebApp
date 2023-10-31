@@ -10,13 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="game over message is being shown">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFourServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFourServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/spw4/connectfour/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/spw4/connectfour/BoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/spw4/connectfour/ConnectFourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/spw4/connectfour/ConnectFourTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +65,13 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;java.suggest.annotation.dependency&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dashn_7v81cvp/Documents/viertesSemester/Testautomatisierung/ConnectFourWebApp/target&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.27126437&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.idesettings.debugger.capture&quot;,
@@ -79,10 +80,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dashn_7v81cvp\Documents\viertesSemester\Testautomatisierung\ConnectFourWebApp\src\main\webapp" />
+      <recent name="C:\Users\dashn_7v81cvp\Documents\viertesSemester\Testautomatisierung\ConnectFourWebApp\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\dashn_7v81cvp\Documents\ConnectFourWebApp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Connect-Four">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.15">
     <configuration name="Connect-Four" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="spw4.connectfour.Main" />
       <module name="ConnectFourWebApp" />
@@ -195,6 +198,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 10.1.15" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.15" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="ConnectFourWebApp:war exploded">
           <settings>
@@ -318,7 +322,13 @@
       <workItem from="1698654361927" duration="665000" />
       <workItem from="1698662940211" duration="789000" />
       <workItem from="1698663788384" duration="2000" />
-      <workItem from="1698663949505" duration="1909000" />
+      <workItem from="1698663949505" duration="2003000" />
+      <workItem from="1698666800713" duration="58000" />
+      <workItem from="1698666904603" duration="8000" />
+      <workItem from="1698667692202" duration="342000" />
+      <workItem from="1698668269363" duration="8000" />
+      <workItem from="1698698504200" duration="836000" />
+      <workItem from="1698749805129" duration="3570000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -448,7 +458,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698621193239</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="game over message is being shown">
+      <option name="closed" value="true" />
+      <created>1698665921056</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1698665921056</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

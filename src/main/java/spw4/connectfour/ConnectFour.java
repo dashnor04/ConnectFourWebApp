@@ -23,12 +23,6 @@ public class ConnectFour implements Serializable {
 
     public void initialize() {
         currentPlayer = 0;
-        Scanner scanner = new Scanner(System.in);
-        String input;
-        System.out.println("Player 1 choose your color! (available: RED, YELLOW)");
-        input = scanner.nextLine();
-        setupColor(input);
-
         board = new Board();
         for (int row = 0; row < BOARD_HEIGHT; row++) {
             for (int col = 0; col < BOARD_WIDTH; col++) {
