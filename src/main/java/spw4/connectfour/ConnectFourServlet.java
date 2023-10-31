@@ -1,6 +1,7 @@
 package spw4.connectfour;
 
 import java.io.*;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -12,9 +13,15 @@ public class ConnectFourServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        game = new ConnectFour();
-        game.initialize();
+        try {
+            game = new ConnectFour();
+            game.initialize();
+        } catch (IndexOutOfBoundsException e) {
+            throw new ServletException("Initialization failed", e);
+        }
     }
+
+
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
