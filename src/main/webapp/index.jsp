@@ -18,7 +18,6 @@
 <h2>Game Over! <%= request.getAttribute("winner")%> Won</h2>
 <% } %>
 
-
 <% if(!colorSelected) { %>
 <form id="colorPickerForm" action="${pageContext.request.contextPath}/ConnectFour" method="POST">
     <h3>Choose Your Color:</h3>
@@ -67,7 +66,7 @@
                     switch (cell) {
                         case 'R': %>
         <div class="cell">
-            <div id="red-token"></div>
+            <div id="red-token" class="token"></div>
         </div>
         <% break;
             case 'Y': %>
