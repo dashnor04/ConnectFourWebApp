@@ -86,7 +86,4 @@ public class ConnectFourServlet extends HttpServlet {
             req.getRequestDispatcher("/index.jsp").forward(req, resp);
         }
     }
-
-    public void destroy() {
-    }
 }

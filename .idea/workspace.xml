@@ -9,7 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="ConnectFour v1.0.2 - improved unit tests, updated dependencies" />
+    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="ConnectFour v1.0.2 - improved unit tests, updated dependencies">
+      <change afterPath="$PROJECT_DIR$/Solution.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFourServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spw4/connectfour/ConnectFourServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +42,9 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -66,7 +74,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.27126437&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.idesettings.debugger.capture&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -77,7 +85,7 @@
       <recent name="C:\Users\dashn_7v81cvp\Documents\ConnectFourWebApp" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.ConnectFourWebApp">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.15">
     <configuration name="Connect-Four" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="spw4.connectfour.Main" />
       <module name="ConnectFourWebApp" />
@@ -325,6 +333,19 @@
       <workItem from="1698775891964" duration="3376000" />
       <workItem from="1698779402197" duration="141000" />
       <workItem from="1698779615178" duration="1156000" />
+      <workItem from="1698780997915" duration="106000" />
+      <workItem from="1698850920536" duration="4000" />
+      <workItem from="1698856933980" duration="611000" />
+      <workItem from="1698914453529" duration="53000" />
+      <workItem from="1698914521586" duration="119000" />
+      <workItem from="1698939055417" duration="993000" />
+      <workItem from="1698948612922" duration="443000" />
+      <workItem from="1699002264464" duration="996000" />
+      <workItem from="1699009864483" duration="802000" />
+      <workItem from="1699202838503" duration="59000" />
+      <workItem from="1699203549209" duration="77000" />
+      <workItem from="1699205773496" duration="839000" />
+      <workItem from="1699282631404" duration="1274000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -534,7 +555,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698780628013</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="ConnectFour v1.0.2 - improved unit tests, updated dependencies">
+      <option name="closed" value="true" />
+      <created>1698781001867</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1698781001867</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

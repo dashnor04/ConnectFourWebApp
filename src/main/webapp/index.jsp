@@ -18,6 +18,7 @@
 <h2>Game Over! <%= request.getAttribute("winner")%> Won</h2>
 <% } %>
 
+
 <% if(!colorSelected) { %>
 <form id="colorPickerForm" action="${pageContext.request.contextPath}/ConnectFour" method="POST">
     <h3>Choose Your Color:</h3>
@@ -27,6 +28,10 @@
     <label for="yellow">Yellow</label><br><br>
     <button type="submit" >Start Game</button>
 </form>
+<% } %>
+
+<% if(colorSelected) { %>
+    <div> <%= request.getAttribute("color")%>  </div>
 <% } %>
 
 
