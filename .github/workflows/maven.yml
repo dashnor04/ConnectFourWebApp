@@ -3,10 +3,10 @@ name: Build and Test Java
 on:
   push:
     branches:
-      - main  # Replace 'main' with your main branch name
+      - master
   pull_request:
     branches:
-      - main  # Replace 'main' with your main branch name
+      - master
 
 jobs:
   build:
@@ -19,13 +19,13 @@ jobs:
     - name: Set up JDK 11
       uses: actions/setup-java@v2
       with:
-        java-version: '11'  # You can specify the Java version you need here
+        java-version: '11'  
 
     - name: Install Maven dependencies
-      run: mvn dependency:resolve  # Resolve and install project dependencies
+      run: mvn dependency:resolve  
 
     - name: Build with Maven
-      run: mvn clean install  # This command builds the project
+      run: mvn clean install  
 
     - name: Test
-      run: mvn test  # This command runs the project tests
+      run: mvn test 
