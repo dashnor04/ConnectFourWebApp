@@ -19,13 +19,13 @@ jobs:
     - name: Set up JDK 11
       uses: actions/setup-java@v2
       with:
-        java-version: '11'  
+        java-version: '11'
 
     - name: Install Maven dependencies
-      run: mvn dependency:resolve  
+      run: mvn -s settings.xml dependency:resolve  # Use the settings.xml file for Maven configuration
 
     - name: Build with Maven
-      run: mvn clean install  
+      run: mvn -s settings.xml clean install  # This command builds the project using the settings.xml file
 
     - name: Test
-      run: mvn test 
+      run: mvn -s .github/settings.xml test  # This command runs the project tests using the settings.xml file
