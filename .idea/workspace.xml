@@ -9,10 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="ConnectFour v1.0.3 - solution.md 1.0">
+    <list default="true" id="6ae688a0-76f2-453d-872d-20a891359607" name="Changes" comment="ConnectFour v1.1.0 - tracker for who placed the last token">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solution.md" beforeDir="false" afterPath="$PROJECT_DIR$/Solution.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -345,7 +343,9 @@
       <workItem from="1699203549209" duration="77000" />
       <workItem from="1699205773496" duration="839000" />
       <workItem from="1699282631404" duration="1935000" />
-      <workItem from="1699285885136" duration="429000" />
+      <workItem from="1699285885136" duration="957000" />
+      <workItem from="1699291696499" duration="338000" />
+      <workItem from="1699294205302" duration="1277000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -571,7 +571,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699284346723</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="ConnectFour v1.1.0 - tracker for who placed the last token">
+      <option name="closed" value="true" />
+      <created>1699286569338</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1699286569338</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,6 +618,7 @@
     <MESSAGE value="ConnectFour v1.0.1 - beautify board, place board in middle of the screen" />
     <MESSAGE value="ConnectFour v1.0.2 - improved unit tests, updated dependencies" />
     <MESSAGE value="ConnectFour v1.0.3 - solution.md 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="ConnectFour v1.0.3 - solution.md 1.0" />
+    <MESSAGE value="ConnectFour v1.1.0 - tracker for who placed the last token" />
+    <option name="LAST_COMMIT_MESSAGE" value="ConnectFour v1.1.0 - tracker for who placed the last token" />
   </component>
 </project>
