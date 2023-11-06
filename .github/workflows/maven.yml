@@ -16,16 +16,16 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up JDK 11
+    - name: Set up JDK 17
       uses: actions/setup-java@v2
       with:
-        java-version: '11'
+        java-version: '17'
 
     - name: Install Maven dependencies
-      run: mvn -s settings.xml dependency:resolve  # Use the settings.xml file for Maven configuration
+      run: mvn -s settings.xml dependency:resolve 
 
     - name: Build with Maven
-      run: mvn -s settings.xml clean install  # This command builds the project using the settings.xml file
+      run: mvn -s settings.xml clean install  
 
     - name: Test
-      run: mvn -s .github/settings.xml test  # This command runs the project tests using the settings.xml file
+      run: mvn -s .github/settings.xml test  
