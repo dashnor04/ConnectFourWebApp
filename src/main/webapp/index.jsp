@@ -30,8 +30,8 @@
 </form>
 <% } %>
 
-<% if(colorSelected) { %>
-    <div> <%= request.getAttribute("color")%>  </div>
+<% if(colorSelected && request.getAttribute("gameOver") == null) { %>
+    <div> Last Placed: <%= request.getAttribute("color")%>  </div>
 <% } %>
 
 

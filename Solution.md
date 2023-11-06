@@ -3,8 +3,7 @@ SPW4 - Project
 
 Name: Dashnor Spahiu
 
-Effort in hours: 15
-
+Effort in hours: 16
 # Connect Four
 
 ## Lösungsidee
