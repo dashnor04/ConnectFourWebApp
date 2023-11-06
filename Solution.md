@@ -3,7 +3,7 @@ SPW4 - Project
 
 Name: Dashnor Spahiu
 
-Effort in hours: 16
+Effort in hours: 18
 # Connect Four
 
 ## Lösungsidee
@@ -52,3 +52,7 @@ zu setzen. In jedem Fall wird die Board-Instanz der ConnectFour Klasse zurückge
 
 
 ### Task D
+Ich habe eine .yml file geschrieben um bei jedem push/pull auf den master branch meine Anwendung local zu deployen. 
+Dazu wird zuerst die Java SDK 17 aufgesetzt, dannach mittles settings.xml und pom.xml die Dependencies installiert. 
+Danach wird die Anwendung mit dem mvn command gebaut, getestet und gestartet. Die Anwendung ist unter localhost:8080 
+erreichbar.
