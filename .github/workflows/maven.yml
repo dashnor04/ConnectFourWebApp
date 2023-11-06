@@ -16,16 +16,32 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up JDK 11
+    - name: Set up JDK 17
       uses: actions/setup-java@v2
       with:
-        java-version: '11'
+        java-version: '17'
+        distribution: adopt
 
     - name: Install Maven dependencies
-      run: mvn -s settings.xml dependency:resolve  # Use the settings.xml file for Maven configuration
+      run: mvn -s settings.xml dependency:resolve 
 
     - name: Build with Maven
-      run: mvn -s settings.xml clean install  # This command builds the project using the settings.xml file
+      run: mvn -s settings.xml clean install  
+
+    - name: Package Application
+      run: mvn -s settings.xml package 
 
     - name: Test
-      run: mvn -s .github/settings.xml test  # This command runs the project tests using the settings.xml file
+      run: mvn -s settings.xml test  
+
+    - name: Set up Tomcat
+      run: |
+        wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.60/bin/apache-tomcat-9.0.60.tar.gz
+        tar -xf apache-tomcat-9.0.60.tar.gz
+
+    - name: Deploy Locally
+      run: |
+        mkdir -p deployment
+        cp target/ConnectFourWebApp-1.0-SNAPSHOT.war apache-tomcat-9.0.60/webapps/ConnectFourWebApp-1.0-SNAPSHOT.war
+        apache-tomcat-9.0.60/bin/startup.sh
+
