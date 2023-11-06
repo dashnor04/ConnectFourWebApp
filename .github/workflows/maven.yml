@@ -28,5 +28,14 @@ jobs:
     - name: Build with Maven
       run: mvn -s settings.xml clean install  
 
+    - name: Package Application
+      run: mvn -s settings.xml package 
+
     - name: Test
       run: mvn -s settings.xml test  
+
+    - name: Deploy Locally
+      run: |
+        mkdir -p deployment
+        cp target/ConnectFourWebApp-1.0-SNAPSHOT.war deployment/ConnectFourWebApp-1.0-SNAPSHOT.war
+        java -jar deployment/ConnectFourWebApp-1.0-SNAPSHOT.war  
